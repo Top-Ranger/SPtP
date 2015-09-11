@@ -1,0 +1,98 @@
+SPtP (Smart-Point-to-Polygon) - User guide
+   by Philipp Naumann and Marcus Soll
+
+-------------------------------------------------------------------------------
+
+Contents:
+
+   1. Dependencies
+   2. Batch processing
+   3. Graphical user interface
+   4. Unit tests
+   5. Learning
+
+-------------------------------------------------------------------------------
+
+1. Dependencies
+
+SPtP requires Python 3. The following libraries need to be installed:
+   pillow (https://pypi.python.org/pypi/Pillow/2.6.1)
+   shapely (https://pypi.python.org/pypi/Shapely/1.5.0)
+On most systems these can be installed using pip, e.g.
+   pip install pillow
+   pip install shapely
+
+-------------------------------------------------------------------------------
+
+2. Batch processing
+
+The batch processing script (run_batch.py) processes a text file containing
+locations. A location has a name, GPS coordinates and any number of space
+usage rules. The script is started by running run_batch.py, e.g.
+
+   python3 run_batch.py
+
+By default "./input/surs.txt" is the path to the locations file, "./input/"
+is the path to the folder containing images (and *.truth.kml files), results
+files are stored in "./output/" and log files are stored in "./log/".
+
+Please use the command line option "--help" to display detailed information on
+available command line options, e.g.
+
+   python3 run_batch.py --help
+
+-------------------------------------------------------------------------------
+
+3. Graphical user interface
+
+The application features a web-based GUI which can be used with any modern web
+browser. Running run_server.py will start the GUI server with default options,
+e.g.:
+
+   python3 run_server.py
+
+By default the server is configured to listen on localhost:8080 using the
+batch processing script's default paths for images, *.truth.kml and
+results files.
+
+More detailed information on available command line options may be displayed
+by using the command line option "--help", e.g.
+
+   python3 run_server.py --help
+
+The server itself is a basic HTTP server. The web interface has three basic
+functions:
+1) Display a location previously processed by the batch processing script.
+2) Manually enter a location to be processed. Uploading an image is optional
+   and only possible if the browser supports the FileReader API.
+3) Select layers (map tiles, buildings, polygons)
+
+The information box in the upper right corner may be expanded by left-clicking
+it.
+
+-------------------------------------------------------------------------------
+
+4. Unit tests
+
+The application's unit tests may be performed by running run_test.py, e.g.
+
+   python3 run_tests.py
+
+-------------------------------------------------------------------------------
+
+5. Learning
+
+The learning process allows the generation of factors which determine the 
+weight of each weak classifier. A default factors file is included in this 
+distribution (/data/factors.txt). The learning process uses input data at 
+"./learning/db/" for the learning process and input data at 
+"./learning/test/" for verification.
+
+The learning process can be started by running run_learning.py, e.g.:
+
+   python3 run_learning.py
+
+The parameter of the learning process can be controlled through command line 
+arguments. For more information run
+
+   python3 run_learning.py --help

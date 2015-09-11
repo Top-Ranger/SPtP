@@ -1,0 +1,9 @@
+1, 1.2, 2.1, smoking="no"
+1, 1.2, 2.1, swimming="yes"
+#2, 1.0, 2.0, should_not_be="parsed"
+3, 1.0, this_is="broken"
+4, 1.0, 1.0, this_is_too
+5, 1.0, 1.0, and_this="
+6, 1.0, 1.0, 1.0, this_too=""
+7, 1.0 2.142, 1.54, correct="no"
+8, 1.7, 3,5, too="long"yes

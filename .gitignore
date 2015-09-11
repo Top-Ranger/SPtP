@@ -1,0 +1,34 @@
+# Basic ignores
+.idea
+*.tar.gz
+*.tar
+*.osm
+__pycache__
+input/*
+output/*
+!tests/*
+!tests/negative/*/*
+!/tests/batch_test_files/*/*
+tests/__pycache__
+log/*
+!learning/*
+learning/tmp/*
+server/images/*
+server/tmp/*
+server/server.log
+
+# LaTeX
+*.pdf
+*.aux
+*.out
+*.log
+*.toc
+*.lof
+*.tex.backup
+*.synctex.gz
+
+# BiBTeX
+*.bbl
+*.bib.bak
+*.blg
+

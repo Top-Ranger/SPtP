@@ -1,0 +1,16 @@
+html, body { margin: 0; padding: 0; width: 100%; height: 100%; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 90%; color: #444 }
+div.box { border: medium none; box-shadow: 0 1px 5px rgba(0, 0, 0, 0.65); z-index: 7; background-color: #fff }
+#map { width: 100%; height: 100% }
+#menu { position: fixed; height: 53px; left: 50px; top: 10px; width: 128px; padding-left: 7px }
+#menu img { margin: 11px 2px }
+#info { position: fixed; width: 350px; height: 30px; top: 10px; right: 10px; padding: 10px }
+#info div { position: absolute; top: 10px; right: 10px }
+#info div.dlimage { position: absolute; top: 11px; right: 7px }
+#info.expanded { width: 600px; height: 600px }
+#info table { width: 100%; border-collapse: collapse }
+#info td { border: 1px solid #ddd; padding: 4px; word-wrap: break-word }
+#info td img { margin: 3px 0 0 3px }
+#info td.summary { font-weight: bold; background-color: #ddd; text-align: center }
+#info td.label { width: 200px; font-weight: bold }
+#info span { font-weight: normal; margin-left: 20px }
+label { margin-right: 5px }

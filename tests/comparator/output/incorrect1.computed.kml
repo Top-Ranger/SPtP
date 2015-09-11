@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<Style id="poly1">
+<LineStyle>
+<width>1.5</width>
+</LineStyle>
+<PolyStyle>
+<color>7dff0000</color>
+</PolyStyle>
+</Style>
+<!--
+Contains information from http://www.openstreetmap.org/, which is made available
+here under the Open Database License (ODbL) [http://opendatacommons.org/licenses/odbl/1.0/].
+-->
+<Placemark>
+<name>hh117</name>
+<styleUrl>#poly1</styleUrl>
+<altitudeMode>clampToGround</altitudeMode>
+<extrude>1</extrude>
+<tessellate>1</tessellate>
+<description><img src="hh117.jpg" width="400"/></description>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+10.223370,53.506296
+10.223216,53.506237
+10.223039,53.506284
+10.222911,53.506203
+10.222744,53.506083
+10.222573,53.505982
+10.222141,53.505655
+10.221882,53.505440
+10.221674,53.505290
+10.221753,53.504931
+10.221929,53.505018
+10.221918,53.505231
+10.221898,53.505325
+10.222082,53.505273
+10.222280,53.505253
+10.222374,53.505298
+10.223275,53.505937
+10.223326,53.506128
+10.223370,53.506296
+</coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+<ExtendedData>
+</ExtendedData>
+</Placemark>
+<Placemark>
+<name>hh117</name>
+<description></description>
+<Point>
+<coordinates>
+10.221768,53.505053
+</coordinates>
+</Point>
+<ExtendedData>
+</ExtendedData>
+</Placemark>
+</Document>
+</kml>

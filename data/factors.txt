@@ -1,0 +1,10 @@
+OSM Weight, 0.20739243973984212
+Point in polygon, 0.6655733134532382
+Proximity (closest edge), 2.814857245021061
+SUR-OSM Mapping, 3.5452158852811237
+Image processing, 1.030721439007276
+Exif GPSInfo Direction, 0.39949553038482777
+Proximity (closest vertex), 0.47746705473125983
+SUR Description, 4.320887900940914
+Generated Weight, 3.5146908152383536
+Proximity (centroid), 0.54995828329874
