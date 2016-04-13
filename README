@@ -5,11 +5,36 @@ SPtP (Smart-Point-to-Polygon) - User guide
 
 Contents:
 
+   0. Introduction
    1. Dependencies
    2. Batch processing
    3. Graphical user interface
    4. Unit tests
    5. Learning
+
+-------------------------------------------------------------------------------
+
+0. Introduction
+
+The lack of certain types of geographic data prevents the development of 
+location-aware technologies in a number of important domains. One such type of
+“unmapped” geographic data is space usage rules (SURs), which are defined as
+geographically-bound activity restrictions (e.g. “no dogs”, “no smoking”, “no 
+fishing”, “no skateboarding”). We present a novel SUR mapping technique - SPtP
+- that outperforms current state-of-the-art approaches by 30% for one of the 
+most important components of the SUR mapping pipeline: associating a point 
+observation of a SUR (e.g. a ’no smoking’ sign) with the corresponding polygon 
+in which the SUR applies (e.g. the nearby park or the entire campus on which 
+the sign is located). The accompanying  paper published at ACM CHI 2016 can be
+found online at: http://dx.doi.org/10.1145/2858036.2858053
+
+Marcus Soll, Philipp Naumann, Johannes Schöning, Pavel Samsonov & Brent Hecht:
+Helping Computers Understand Geographically-Bound Activity Restrictions.
+CHI 2016: Proceedings of the International Conference on Human Factors in 
+Computing Systems, 2016.
+
+The data sets used for evaluation can be found at:
+https://github.com/Top-Ranger/CHI2016-SUR-datasets
 
 -------------------------------------------------------------------------------
 
